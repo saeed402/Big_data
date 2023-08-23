@@ -14,7 +14,7 @@ In some discussions, a sixth V, **Variability,** is also mentioned. Variability 
 
 These concepts were developed to address the challenges posed by the increasing complexity and scale of data in the digital age. They help organizations and individuals understand the unique aspects of working with large datasets and guide decisions related to data management, storage, processing, and analysis.
 
-![5 v's of data_picture](./path/to/image.png "Text to show on mouseover").
+![5 v's of data_picture](./assets/5-Vs-of-Data.png).
 
 
 
