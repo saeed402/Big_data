@@ -217,7 +217,7 @@ Key features and concepts of ZooKeeper include:
 5.  **High Availability:** ZooKeeper is designed to provide high availability by running in a replicated mode across multiple servers. If one server fails, another server can take over, ensuring continued availability of the service.
 6.  **Simplicity:** ZooKeeper provides a simple and lightweight API for developers to interact with its services. This API makes it easier to integrate ZooKeeper into distributed applications.
 
-![Hadoop_picture](./assets/zookeeper.jpg).
+![Hadoop_picture](./assets/Hadoop-YARN.png).
 
 In the Hadoop ecosystem, ZooKeeper is used for various purposes, including:
 
