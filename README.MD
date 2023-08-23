@@ -86,7 +86,7 @@ MapReduce is a programming model and processing framework introduced by Google t
 
 In the MapReduce model, data processing tasks are divided into two main phases: the "Map" phase and the "Reduce" phase. The framework automatically manages the distribution of data and execution across a cluster of machines.
 
-![MapReduce_picture](./assets/MapReduce.png).
+![MapReduce_picture](./assets/MapReduce-Architecture.jpg).
 
 Here's an overview of how MapReduce works:
 
