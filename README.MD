@@ -125,7 +125,7 @@ Key features and benefits of Apache Tez include:
 8.  **Resource Management:** Tez uses YARN for resource management, allowing it to efficiently use cluster resources.
 9.  **Compatibility:** Tez is compatible with other Hadoop ecosystem tools and libraries, making it easy to integrate into existing Hadoop workflows.
 
-![Apachetez_picture](./assets/Apachetez.jpg).
+![Apachetez_picture](./assets/apachetez2.png).
 
 Overall, Apache Tez helps bridge the gap between the low-level efficiency of YARN and the high-level abstraction needed for more complex data processing tasks, making it a valuable tool for big data processing in the Hadoop ecosystem.
 
