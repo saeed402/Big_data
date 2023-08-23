@@ -58,7 +58,7 @@ Key characteristics of the Google File System (GFS) include:
 6.  **High Throughput:** GFS is designed to provide high throughput for data-intensive tasks, which is crucial for applications that process and analyze vast amounts of data.
 7.  **Metadata Management:** GFS centralizes metadata management through a master server, which keeps track of file system metadata like file names, directory structures, and chunk locations.
 
-![GFS_picture](./assets/GFS.png).
+![GFS_picture](./assets/GoogleFileSystem.png).
 
 It's important to note that GFS is not a publicly available file system like open-source alternatives such as Hadoop Distributed File System (HDFS). Google developed GFS to meet its specific needs, and the company has not released the GFS source code to the public. However, the concept of GFS has had a significant influence on the development of other distributed file systems and storage solutions.
 
