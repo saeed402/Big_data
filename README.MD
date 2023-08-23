@@ -23,6 +23,7 @@ These concepts were developed to address the challenges posed by the increasing 
 Big data refers to extremely large and complex datasets that are difficult to manage, process, and analyze using traditional data processing methods. These datasets are characterized by their volume, velocity, variety, and sometimes other attributes like veracity and value. Big data often comes from a wide range of sources, including social media, sensor networks, transaction records, multimedia content, and more.
 
 The term "big data" is not solely about the size of the data but also about the challenges and opportunities that come with it. Traditional data processing tools and databases may struggle to handle big data efficiently due to its scale and complexity. As a result, new technologies and techniques have emerged to address these challenges, including distributed computing frameworks like Hadoop and Spark, NoSQL databases, and specialized data processing and analytics tools.
+![Bigdata_picture](./assets/components_Big_data.jpg).
 
 The insights derived from analyzing big data can lead to valuable insights, patterns, trends, and correlations that were previously difficult to identify. Organizations can use big data to make data-driven decisions, improve processes, enhance customer experiences, and gain a competitive edge. However, working with big data also presents challenges in terms of data privacy, security, ethical considerations, and the need for specialized skills and infrastructure.
 
@@ -39,9 +40,11 @@ Here's a summary of the major versions of Apache Hadoop:
 5.  **Hadoop 3.0 (December 2017):** Hadoop 3.0 brought several important updates, including support for erasure coding in HDFS, enhancements to YARN, and the introduction of the Hadoop 3.0 release introduced improvements to HDFS, YARN, and other components, aiming to improve performance, resource utilization, and overall usability.
 6.  **Hadoop 3.x (ongoing releases):** The Hadoop 3.x series continues to build on the improvements of Hadoop 3.0, with updates to various components to enhance performance, scalability, and security. Ongoing releases in this series aim to keep Hadoop up-to-date with evolving big data needs and technology trends.
 
+![Apachehadoop_picture](./assets/Hadoop_Ecosystem.jpg).
+
 It's important to note that Hadoop is not just a single software package but a collection of various modules and ecosystem projects that work together to provide a comprehensive big data solution. In addition to HDFS and YARN, the Hadoop ecosystem includes projects like Apache Hive (for data warehousing and querying), Apache Pig (for data flow scripting), Apache Spark (for fast in-memory data processing), Apache HBase (a NoSQL database), and many others.
 
- **What is GFS?**
+ **What is Gooogle File System(GFS)?**
 
 GFS stands for Google File System. It is a proprietary distributed file system developed by Google to handle the storage needs of their large-scale data-intensive applications, such as Google Search and other web services. GFS was introduced in a research paper published by Google engineers in 2003, providing insights into its design and architecture.
 
@@ -55,9 +58,11 @@ Key characteristics of the Google File System (GFS) include:
 6.  **High Throughput:** GFS is designed to provide high throughput for data-intensive tasks, which is crucial for applications that process and analyze vast amounts of data.
 7.  **Metadata Management:** GFS centralizes metadata management through a master server, which keeps track of file system metadata like file names, directory structures, and chunk locations.
 
+![GFS_picture](./assets/GFS.png).
+
 It's important to note that GFS is not a publicly available file system like open-source alternatives such as Hadoop Distributed File System (HDFS). Google developed GFS to meet its specific needs, and the company has not released the GFS source code to the public. However, the concept of GFS has had a significant influence on the development of other distributed file systems and storage solutions.
 
-While GFS itself is not directly accessible to the general public, its design principles and architecture have inspired the development of various open-source distributed file systems and storage systems that aim to address similar challenges in managing large-scale data.
+
 
  **What is YARN in Hadoop context?**
 
@@ -70,6 +75,8 @@ YARN is designed to address the limitations of the earlier Hadoop versions and t
 
 With YARN, Hadoop clusters can run multiple types of applications simultaneously, including not only MapReduce jobs but also other data processing frameworks like Apache Spark, Apache Flink, and more. This allows for better utilization of cluster resources and improved overall efficiency.
 
+![YARN_picture](./assets/YARN.png).
+
 YARN also introduces the concept of application-specific containers. These containers are allocated resources for running a specific application's tasks, whether they are MapReduce tasks or tasks from other processing frameworks. This container-based approach enables more efficient resource utilization and isolation between applications.
 
  **What is MapReduce ?**
@@ -78,6 +85,8 @@ YARN also introduces the concept of application-specific containers. These conta
 MapReduce is a programming model and processing framework introduced by Google that provides a way to process and analyze large datasets in a parallel and distributed manner. It simplifies the task of writing scalable and fault-tolerant data processing applications for big data.
 
 In the MapReduce model, data processing tasks are divided into two main phases: the "Map" phase and the "Reduce" phase. The framework automatically manages the distribution of data and execution across a cluster of machines.
+
+![MapReduce_picture](./assets/MapReduce.png).
 
 Here's an overview of how MapReduce works:
 
@@ -116,6 +125,8 @@ Key features and benefits of Apache Tez include:
 8.  **Resource Management:** Tez uses YARN for resource management, allowing it to efficiently use cluster resources.
 9.  **Compatibility:** Tez is compatible with other Hadoop ecosystem tools and libraries, making it easy to integrate into existing Hadoop workflows.
 
+![Apachetez_picture](./assets/Apachetez.jpg).
+
 Overall, Apache Tez helps bridge the gap between the low-level efficiency of YARN and the high-level abstraction needed for more complex data processing tasks, making it a valuable tool for big data processing in the Hadoop ecosystem.
 
  **What is Apache Spark?**
@@ -134,6 +145,8 @@ Key features and characteristics of Apache Spark include:
 8.  **Graph Processing:** Spark GraphX provides a graph processing library that allows users to perform graph analytics and computations on large-scale graphs.
 9.  **Extensibility:** Spark's extensible architecture allows users to integrate their own custom libraries and data sources, making it adaptable to a variety of use cases.
 10.  **Community and Ecosystem:** Spark has a vibrant and active open-source community, resulting in a rich ecosystem of tools, libraries, and extensions that enhance its capabilities.
+
+![Apachespark_picture](./assets/Apache_spark.png).
 
 Apache Spark has gained widespread adoption in various industries and domains, including finance, healthcare, e-commerce, and more. Its versatility, performance improvements, and ease of use have made it a preferred choice for big data processing and analytics, replacing or complementing traditional MapReduce-based workflows in many cases.
 
@@ -167,6 +180,7 @@ Here are some key features and characteristics of Apache Pig:
 6.  **Schema Flexibility:** Pig is designed to work with semi-structured data, so it doesn't require a strict schema definition for data. This can be particularly useful for scenarios where the data structure varies.
 7.  **Interactive Shell:** Pig provides an interactive shell (Grunt) that allows users to test and experiment with Pig Latin statements before incorporating them into scripts.
 8.  **Compatibility:** Pig integrates well with other Hadoop ecosystem tools and can be used alongside Hive, HBase, and other components.
+![PIGhadoop_picture](./assets/pig-architecture.jpg).
 
 **What is Sentry?**
 
@@ -184,6 +198,8 @@ Key features and concepts of Sentry include:
 6.  **Integration with Hive and Impala:** Sentry integrates seamlessly with Hive and Impala, enabling the enforcement of access controls for SQL-based queries.
 7.  **Dynamic Policy Updates:** Sentry supports dynamic policy updates, allowing administrators to modify access policies without requiring cluster restarts.
 
+![sentry_picture](./assets/sentry_architecture.png).
+
 Sentry is especially useful in multi-tenant environments where different users and teams share the same Hadoop cluster but need to maintain strict separation and control over their data. It ensures that sensitive data is only accessible by authorized personnel and helps organizations comply with data security regulations.
 
 **What is ZOOKEEPER in Hadoop context?**
@@ -200,6 +216,8 @@ Key features and concepts of ZooKeeper include:
 4.  **Consensus and Leader Election:** ZooKeeper provides algorithms and mechanisms for leader election and reaching consensus in distributed systems. These features are crucial for ensuring that distributed services function correctly and reliably.
 5.  **High Availability:** ZooKeeper is designed to provide high availability by running in a replicated mode across multiple servers. If one server fails, another server can take over, ensuring continued availability of the service.
 6.  **Simplicity:** ZooKeeper provides a simple and lightweight API for developers to interact with its services. This API makes it easier to integrate ZooKeeper into distributed applications.
+
+![Hadoop_picture](./assets/zookeeper.jpg).
 
 In the Hadoop ecosystem, ZooKeeper is used for various purposes, including:
 
@@ -225,4 +243,5 @@ Key features and characteristics of Spark MLlib include:
 7.  **Hyperparameter Tuning:** MLlib includes tools for hyperparameter tuning to help you find the optimal configuration for your models.
 8.  **Integration with DataFrame API:** MLlib is designed to work seamlessly with Spark DataFrames, allowing you to leverage Spark's optimized and expressive data manipulation capabilities along with machine learning tasks.
 9.  **Scalability:** MLlib's distributed nature ensures that it can handle large datasets that may not fit in memory on a single machine.
+![MLlib_picture](./assets/Sparkmllib.png).
 
