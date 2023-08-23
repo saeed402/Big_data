@@ -75,7 +75,7 @@ YARN is designed to address the limitations of the earlier Hadoop versions and t
 
 With YARN, Hadoop clusters can run multiple types of applications simultaneously, including not only MapReduce jobs but also other data processing frameworks like Apache Spark, Apache Flink, and more. This allows for better utilization of cluster resources and improved overall efficiency.
 
-![YARN_picture](./assets/YARN.png).
+![YARN_picture](./assets/Hadoop-YARN.png).
 
 YARN also introduces the concept of application-specific containers. These containers are allocated resources for running a specific application's tasks, whether they are MapReduce tasks or tasks from other processing frameworks. This container-based approach enables more efficient resource utilization and isolation between applications.
 
@@ -217,7 +217,7 @@ Key features and concepts of ZooKeeper include:
 5.  **High Availability:** ZooKeeper is designed to provide high availability by running in a replicated mode across multiple servers. If one server fails, another server can take over, ensuring continued availability of the service.
 6.  **Simplicity:** ZooKeeper provides a simple and lightweight API for developers to interact with its services. This API makes it easier to integrate ZooKeeper into distributed applications.
 
-![Hadoop_picture](./assets/Hadoop-YARN.png).
+![Hadoop_picture](.assets/ZooKeeper-Service-2.png).
 
 In the Hadoop ecosystem, ZooKeeper is used for various purposes, including:
 
